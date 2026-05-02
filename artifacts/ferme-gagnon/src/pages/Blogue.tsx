@@ -118,7 +118,7 @@ export default function Blogue() {
                     className="inline-flex items-center gap-2 text-[#003087] text-xs font-bold tracking-widest uppercase border-b-2 border-[#003087] pb-0.5 hover:text-[#C8102E] hover:border-[#C8102E] transition-colors"
                     style={{ fontFamily: "'Oswald', sans-serif" }}
                   >
-                    {t("blogue.read")} →
+                    {t("blogue.read")}
                   </button>
                 </div>
               </motion.article>

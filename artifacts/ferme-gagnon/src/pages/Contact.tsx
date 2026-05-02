@@ -207,7 +207,7 @@ export default function Contact() {
             {/* Contact info */}
             <motion.div variants={fadeUp} className="bg-[#003087] text-white p-8">
               <h3 className="text-xl font-black mb-6 uppercase tracking-wide" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                Ferme Gagnon
+                {t("site.name")}
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
@@ -261,7 +261,7 @@ export default function Contact() {
                 {t("contact.newsletter")}
               </h3>
               {newsletterDone ? (
-                <p className="text-green-700 font-semibold text-sm">✓ {t("contact.form.success")}</p>
+                <p className="text-green-700 font-semibold text-sm">{t("contact.form.success")}</p>
               ) : (
                 <form onSubmit={handleNewsletterSubmit} className="space-y-3" data-testid="newsletter-form">
                   <input

@@ -187,7 +187,7 @@ export default function Races() {
                 className="inline-flex items-center gap-3 bg-[#C8102E] text-white px-8 py-4 font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-[#C8102E] transition-colors"
                 style={{ fontFamily: "'Oswald', sans-serif" }}
               >
-                <Phone size={16} /> (450) 835-2443
+                <Phone size={16} /> {t("contact.phone")}
               </button>
             </a>
           </motion.div>

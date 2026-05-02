@@ -156,7 +156,7 @@ export default function Boutique() {
                 className="mt-4 inline-flex items-center gap-2 bg-[#C8102E] text-white px-8 py-3 text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-[#C8102E] transition-colors"
                 style={{ fontFamily: "'Oswald', sans-serif" }}
               >
-                <Phone size={14} /> (450) 835-2443
+                <Phone size={14} /> {t("contact.phone")}
               </button>
             </a>
           </motion.div>

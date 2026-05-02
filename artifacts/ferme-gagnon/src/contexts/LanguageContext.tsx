@@ -179,7 +179,12 @@ const translations: Record<Lang, Record<string, string>> = {
     "common.ingredients": "Ingrédients",
     "common.method": "Méthode",
     "common.menu": "Menu",
-    "common.success": "✓",
+
+    // Footer section headings / misc
+    "footer.nav": "Navigation",
+    "footer.laferme": "La Ferme",
+    "footer.contact": "Contact",
+    "site.name": "Ferme Gagnon",
 
     // Footer
     "footer.tagline": "Délicieux chien depuis 1987",
@@ -357,7 +362,12 @@ const translations: Record<Lang, Record<string, string>> = {
     "common.ingredients": "Ingredients",
     "common.method": "Method",
     "common.menu": "Menu",
-    "common.success": "✓",
+
+    // Footer section headings / misc
+    "footer.nav": "Navigation",
+    "footer.laferme": "The Farm",
+    "footer.contact": "Contact",
+    "site.name": "Ferme Gagnon",
 
     // Footer
     "footer.tagline": "Delicious dog since 1987",

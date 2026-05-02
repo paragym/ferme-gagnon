@@ -34,7 +34,7 @@ export function Footer() {
           {/* Navigation */}
           <div>
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#C8102E] mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              Navigation
+              {t("footer.nav")}
             </h4>
             <ul className="space-y-2">
               {[
@@ -57,7 +57,7 @@ export function Footer() {
           {/* La ferme */}
           <div>
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#C8102E] mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              La Ferme
+              {t("footer.laferme")}
             </h4>
             <ul className="space-y-2">
               {[
@@ -77,7 +77,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#C8102E] mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              Contact
+              {t("footer.contact")}
             </h4>
             <p className="text-sm text-blue-200 mb-2">{t("contact.phone")}</p>
             <p className="text-sm text-blue-200 whitespace-pre-line leading-relaxed">{t("contact.address")}</p>

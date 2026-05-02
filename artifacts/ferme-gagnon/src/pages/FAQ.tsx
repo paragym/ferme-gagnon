@@ -170,7 +170,7 @@ export default function FAQ() {
                             className="bg-[#C8102E] text-white px-4 py-2 text-xs font-bold tracking-widest uppercase hover:bg-[#003087] transition-colors"
                             style={{ fontFamily: "'Oswald', sans-serif" }}
                           >
-                            {t("nav.ressources")} →
+                            {t("nav.ressources")}
                           </button>
                         </Link>
                       </div>
