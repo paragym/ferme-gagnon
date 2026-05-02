@@ -93,19 +93,19 @@ export default function Ressources() {
             {/* Animal grid */}
             <motion.div variants={stagger} className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
               {[
-                { emoji: "🐷", nameFR: "Le cochon", nameEN: "The pig", descFR: "Plus intelligent que le chien, capable de jeux et d'apprentissage complexes.", descEN: "More intelligent than a dog, capable of play and complex learning." },
-                { emoji: "🐄", nameFR: "La vache", nameEN: "The cow", descFR: "Animaux sociaux qui forment des amitiés durables et ressentent la peur.", descEN: "Social animals that form lasting friendships and feel fear." },
-                { emoji: "🐔", nameFR: "Le poulet", nameEN: "The chicken", descFR: "Capable d'empathie, d'anticipation et de résolution de problèmes.", descEN: "Capable of empathy, anticipation and problem-solving." },
-                { emoji: "🐑", nameFR: "Le mouton", nameEN: "The sheep", descFR: "Reconnaissent jusqu'à 50 visages d'individus de leur espèce.", descEN: "Recognize up to 50 faces of individuals of their species." },
-                { emoji: "🐟", nameFR: "Le poisson", nameEN: "The fish", descFR: "Mémoire à long terme, reconnaissance individuelle, intelligence sociale.", descEN: "Long-term memory, individual recognition, social intelligence." },
-                { emoji: "🐙", nameFR: "La pieuvre", nameEN: "The octopus", descFR: "Capable de résoudre des énigmes complexes et de ressentir la douleur.", descEN: "Capable of solving complex puzzles and feeling pain." },
+                { icon: "Sus scrofa", nameFR: "Le cochon", nameEN: "The pig", descFR: "Plus intelligent que le chien, capable de jeux et d'apprentissage complexes.", descEN: "More intelligent than a dog, capable of play and complex learning." },
+                { icon: "Bos taurus", nameFR: "La vache", nameEN: "The cow", descFR: "Animaux sociaux qui forment des amitiés durables et ressentent la peur.", descEN: "Social animals that form lasting friendships and feel fear." },
+                { icon: "Gallus gallus", nameFR: "Le poulet", nameEN: "The chicken", descFR: "Capable d'empathie, d'anticipation et de résolution de problèmes.", descEN: "Capable of empathy, anticipation and problem-solving." },
+                { icon: "Ovis aries", nameFR: "Le mouton", nameEN: "The sheep", descFR: "Reconnaissent jusqu'à 50 visages d'individus de leur espèce.", descEN: "Recognize up to 50 faces of individuals of their species." },
+                { icon: "Teleostei", nameFR: "Le poisson", nameEN: "The fish", descFR: "Mémoire à long terme, reconnaissance individuelle, intelligence sociale.", descEN: "Long-term memory, individual recognition, social intelligence." },
+                { icon: "Octopoda", nameFR: "La pieuvre", nameEN: "The octopus", descFR: "Capable de résoudre des énigmes complexes et de ressentir la douleur.", descEN: "Capable of solving complex puzzles and feeling pain." },
               ].map((a, i) => (
                 <motion.div
                   key={i}
                   variants={fadeUp}
                   className="bg-white p-4 border border-gray-200 text-center"
                 >
-                  <div className="text-3xl mb-2">{a.emoji}</div>
+                  <div className="text-xs font-mono text-[#C8102E] font-semibold mb-2 tracking-wide">{a.icon}</div>
                   <h4 className="text-sm font-black text-[#003087] mb-1" style={{ fontFamily: "'Oswald', sans-serif" }}>
                     {lang === "fr" ? a.nameFR : a.nameEN}
                   </h4>

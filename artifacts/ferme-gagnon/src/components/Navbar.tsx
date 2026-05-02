@@ -77,7 +77,7 @@ export function Navbar() {
 
       {/* Mobile menu button */}
       <div className="md:hidden flex items-center justify-between px-4 py-2">
-        <span className="text-sm font-bold text-[#003087] uppercase tracking-wider">Menu</span>
+        <span className="text-sm font-bold text-[#003087] uppercase tracking-wider">{t("common.menu")}</span>
         <button
           data-testid="mobile-menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}

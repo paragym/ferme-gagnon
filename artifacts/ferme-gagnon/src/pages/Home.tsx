@@ -15,12 +15,12 @@ const stagger = {
 const commitments = ["01","02","03","04","05","06","07"] as const;
 
 const animals = [
-  { key: "pigs", emoji: "🐷", color: "#fce4ec" },
-  { key: "cows", emoji: "🐄", color: "#e8f5e9" },
-  { key: "chickens", emoji: "🐔", color: "#fff8e1" },
-  { key: "sheep", emoji: "🐑", color: "#e3f2fd" },
-  { key: "fish", emoji: "🐟", color: "#e0f7fa" },
-  { key: "octopus", emoji: "🐙", color: "#f3e5f5" },
+  { key: "pigs", icon: "Sus scrofa", color: "#003087" },
+  { key: "cows", icon: "Bos taurus", color: "#003087" },
+  { key: "chickens", icon: "Gallus gallus", color: "#003087" },
+  { key: "sheep", icon: "Ovis aries", color: "#003087" },
+  { key: "fish", icon: "Teleostei", color: "#003087" },
+  { key: "octopus", icon: "Octopoda", color: "#003087" },
 ];
 
 export default function Home() {
@@ -159,7 +159,7 @@ export default function Home() {
             className="text-center mb-14"
           >
             <motion.p variants={fadeUp} className="text-xs font-bold tracking-widest text-[#C8102E] uppercase mb-2">
-              Tous nos chiens sont :
+              {t("common.allDogs")}
             </motion.p>
             <motion.h2
               variants={fadeUp}
@@ -334,14 +334,14 @@ export default function Home() {
             variants={stagger}
             className="grid grid-cols-2 md:grid-cols-3 gap-6"
           >
-            {animals.map(({ key, emoji }) => (
+            {animals.map(({ key, icon }) => (
               <motion.div
                 key={key}
                 variants={fadeUp}
                 className="border border-gray-200 p-6 hover:border-[#003087] transition-colors group"
                 data-testid={`animal-card-${key}`}
               >
-                <div className="text-4xl mb-3">{emoji}</div>
+                <div className="text-xs font-mono text-[#C8102E] font-semibold mb-3 tracking-wide">{icon}</div>
                 <h3 className="font-bold text-[#003087] text-sm uppercase tracking-wide mb-2" style={{ fontFamily: "'Oswald', sans-serif" }}>
                   {t(`home.animals.${key}`)}
                 </h3>

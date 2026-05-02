@@ -71,7 +71,9 @@ export default function Contact() {
                 className="bg-[#003087] text-white p-12 text-center h-full flex flex-col items-center justify-center"
                 data-testid="contact-success"
               >
-                <div className="text-6xl mb-6">✓</div>
+                <div className="w-16 h-16 mb-6 border-4 border-white rounded-full flex items-center justify-center mx-auto">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 16l8 8 12-12" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </div>
                 <p className="text-xl font-bold" style={{ fontFamily: "'Oswald', sans-serif" }}>
                   {t("contact.form.success")}
                 </p>

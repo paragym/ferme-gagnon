@@ -173,6 +173,14 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.phone": "(450) 835-2443",
     "contact.address": "1452 rang Saint-Joseph\nSaint-Gabriel-de-Brandon\nLanaudière, Québec J0K 2N0",
 
+    // Common / shared
+    "common.allDogs": "Tous nos chiens sont :",
+    "common.family": "La Famille Gagnon",
+    "common.ingredients": "Ingrédients",
+    "common.method": "Méthode",
+    "common.menu": "Menu",
+    "common.success": "✓",
+
     // Footer
     "footer.tagline": "Délicieux chien depuis 1987",
     "footer.rights": "© 2025 Ferme Gagnon. Tous droits réservés.",
@@ -342,6 +350,14 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.newsletter.submit": "Subscribe",
     "contact.phone": "(450) 835-2443",
     "contact.address": "1452 rang Saint-Joseph\nSaint-Gabriel-de-Brandon\nLanaudière, Québec J0K 2N0",
+
+    // Common / shared
+    "common.allDogs": "All our dogs are:",
+    "common.family": "The Gagnon Family",
+    "common.ingredients": "Ingredients",
+    "common.method": "Method",
+    "common.menu": "Menu",
+    "common.success": "✓",
 
     // Footer
     "footer.tagline": "Delicious dog since 1987",

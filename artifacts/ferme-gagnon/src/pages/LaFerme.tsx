@@ -107,7 +107,7 @@ export default function LaFerme() {
             className="text-4xl font-black text-[#003087] text-center mb-14"
             style={{ fontFamily: "'Oswald', sans-serif" }}
           >
-            La Famille Gagnon
+            {t("common.family")}
           </motion.h2>
           <motion.div
             initial="hidden"

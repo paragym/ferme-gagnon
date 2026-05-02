@@ -174,7 +174,7 @@ export default function Recettes() {
                     {lang === "fr" ? r.descFR : r.descEN}
                   </p>
                   <div className="mb-4">
-                    <h4 className="text-xs font-bold text-[#C8102E] uppercase tracking-wider mb-2">Ingrédients</h4>
+                    <h4 className="text-xs font-bold text-[#C8102E] uppercase tracking-wider mb-2">{t("common.ingredients")}</h4>
                     <ul className="text-xs text-gray-600 space-y-1">
                       {(lang === "fr" ? r.ingredientsFR : r.ingredientsEN).map((ing, i) => (
                         <li key={i} className="flex items-start gap-2">
@@ -185,7 +185,7 @@ export default function Recettes() {
                     </ul>
                   </div>
                   <div className="border-t border-gray-100 pt-4">
-                    <h4 className="text-xs font-bold text-[#C8102E] uppercase tracking-wider mb-2">Méthode</h4>
+                    <h4 className="text-xs font-bold text-[#C8102E] uppercase tracking-wider mb-2">{t("common.method")}</h4>
                     <p className="text-xs text-gray-600 leading-relaxed">
                       {lang === "fr" ? r.methodFR : r.methodEN}
                     </p>
