@@ -214,7 +214,7 @@ export default function Home() {
             className="mt-8 text-center"
           >
             <p className="text-gray-600 text-sm">{t("home.availability.sub")}</p>
-            <a href="/contact">
+            <Link href="/contact">
               <button
                 data-testid="availability-contact-btn"
                 className="mt-4 inline-flex items-center gap-2 bg-[#C8102E] text-white px-6 py-3 text-sm font-semibold tracking-widest uppercase hover:bg-[#a00020] transition-colors"
@@ -222,7 +222,7 @@ export default function Home() {
               >
                 <Phone size={14} /> {t("contact.phone")}
               </button>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
+import { Link } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const fadeUp = {
@@ -128,7 +129,7 @@ export default function Boutique() {
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">
                     {lang === "fr" ? p.descFR : p.descEN}
                   </p>
-                  <a href="/contact">
+                  <Link href="/contact">
                     <button
                       data-testid={`product-cta-${p.id}`}
                       className="w-full bg-[#003087] text-white py-3 text-xs font-bold tracking-widest uppercase hover:bg-[#C8102E] transition-colors flex items-center justify-center gap-2"
@@ -136,7 +137,7 @@ export default function Boutique() {
                     >
                       <Phone size={14} /> {t("boutique.contact")}
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             ))}

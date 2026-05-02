@@ -186,6 +186,11 @@ const translations: Record<Lang, Record<string, string>> = {
     "footer.contact": "Contact",
     "site.name": "Ferme Gagnon",
 
+    // 404
+    "notfound.title": "404 — PAGE INTROUVABLE",
+    "notfound.body": "Cette page n'existe pas. Retournez à l'accueil.",
+    "notfound.cta": "Retour à l'accueil",
+
     // Footer
     "footer.tagline": "Délicieux chien depuis 1987",
     "footer.rights": "© 2025 Ferme Gagnon. Tous droits réservés.",
@@ -368,6 +373,11 @@ const translations: Record<Lang, Record<string, string>> = {
     "footer.laferme": "The Farm",
     "footer.contact": "Contact",
     "site.name": "Ferme Gagnon",
+
+    // 404
+    "notfound.title": "404 — PAGE NOT FOUND",
+    "notfound.body": "This page does not exist. Return to the home page.",
+    "notfound.cta": "Back to home",
 
     // Footer
     "footer.tagline": "Delicious dog since 1987",
