@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Ferme Gagnon — Viande de Chien Bio du Québec"
+version = "1.0.0"
+id = "artifacts/ferme-gagnon"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24962
+
+[services.development]
+run = "pnpm --filter @workspace/ferme-gagnon run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ferme-gagnon", "run", "build" ]
+publicDir = "artifacts/ferme-gagnon/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24962"
+BASE_PATH = "/"
