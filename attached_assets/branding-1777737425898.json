@@ -1,0 +1,146 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Raleway",
+      "role": "body"
+    },
+    {
+      "family": "DIN Neuzeit Grotesk",
+      "role": "heading"
+    }
+  ],
+  "colors": {
+    "primary": "#0000EE",
+    "secondary": "#D54A5D",
+    "accent": "#D54A5D",
+    "background": "#FFFFFF",
+    "textPrimary": "#000000",
+    "link": "#373B4D"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Raleway",
+      "heading": "DIN Neuzeit Grotesk"
+    },
+    "fontStacks": {
+      "heading": [
+        "dinneuzeitgroteskltw01-_812426",
+        "sans-serif"
+      ],
+      "body": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Raleway",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "20px",
+      "h2": "56px",
+      "body": "14px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "0px"
+  },
+  "components": {
+    "input": {
+      "background": "#FFFFFF",
+      "textColor": "#000000",
+      "borderColor": "#373B4D",
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    },
+    "buttonPrimary": {
+      "background": "#D54A5D",
+      "textColor": "#FFFFFF",
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 0px"
+    },
+    "buttonSecondary": {
+      "background": "#373B4D",
+      "textColor": "#000000",
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.png",
+    "favicon": "File saved at: attached_assets/favicon.jpg",
+    "ogImage": "File saved at: attached_assets/ogImage.png",
+    "logoHref": "https://www.elwooddogmeat.com",
+    "logoAlt": "color logo.png"
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": 1,
+    "reasoning": "Selected #1 because it is a large, visible logo in the header with alt text matching the brand ('color logo.png') and links to the homepage, indicating it is the primary brand logo.",
+    "confidence": 0.9,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Subscribe me",
+      "reasoning": "Button #0 has a vibrant red/orange background (#D54A5D), which is a strong indicator of a primary call-to-action. The text 'Subscribe me' suggests an action-oriented purpose, aligning with typical primary CTA characteristics."
+    },
+    "secondary": {
+      "index": 1,
+      "text": "Woof",
+      "reasoning": "Button #1 has a neutral background color (#373B4D) and the text 'Woof', which is less action-oriented than 'Subscribe me'. It serves as a secondary option with a different color group from the primary button."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "playful",
+    "energy": "medium",
+    "targetAudience": "pet owners"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": 1,
+        "selectedLogoReasoning": "Selected #1 because it is a large, visible logo in the header with alt text matching the brand ('color logo.png') and links to the homepage, indicating it is the primary brand logo.",
+        "confidence": 0.9
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}
