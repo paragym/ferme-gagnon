@@ -79,7 +79,6 @@ export function Footer() {
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#C8102E] mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
               {t("footer.contact")}
             </h4>
-            <p className="text-sm text-blue-200 mb-2">{t("contact.phone")}</p>
             <p className="text-sm text-blue-200 whitespace-pre-line leading-relaxed">{t("contact.address")}</p>
             <div className="flex gap-3 mt-4">
               <a href="#" aria-label="Facebook" className="text-blue-200 hover:text-white transition-colors">

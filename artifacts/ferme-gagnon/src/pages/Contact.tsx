@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { MapPin, Phone, Facebook, Instagram, Youtube } from "lucide-react";
+import { MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -210,12 +210,6 @@ export default function Contact() {
                 {t("site.name")}
               </h3>
               <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <Phone size={16} className="text-[#C8102E] flex-shrink-0" />
-                  <a href="tel:4508352443" className="text-blue-200 hover:text-white transition-colors text-sm">
-                    {t("contact.phone")}
-                  </a>
-                </div>
                 <div className="flex items-start gap-3">
                   <MapPin size={16} className="text-[#C8102E] flex-shrink-0 mt-0.5" />
                   <p className="text-blue-200 text-sm leading-relaxed whitespace-pre-line">

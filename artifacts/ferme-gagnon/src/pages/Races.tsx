@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone } from "lucide-react";
+import { Link } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
 import labradorImg from "@assets/generated_images/breed_labrador.jpg";
 import bergerImg from "@assets/generated_images/breed_berger_allemand.jpg";
@@ -189,15 +189,15 @@ export default function Races() {
             className="mt-16 text-center bg-[#003087] text-white py-12 px-6"
           >
             <p className="text-lg font-semibold mb-4">{t("races.cta")}</p>
-            <a href="tel:4508352443">
+            <Link href="/contact">
               <button
-                data-testid="races-phone-btn"
+                data-testid="races-contact-btn"
                 className="inline-flex items-center gap-3 bg-[#C8102E] text-white px-8 py-4 font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-[#C8102E] transition-colors"
                 style={{ fontFamily: "'Oswald', sans-serif" }}
               >
-                <Phone size={16} /> {t("contact.phone")}
+                {t("nav.contact")}
               </button>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

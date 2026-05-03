@@ -56,8 +56,8 @@ export default function FAQ() {
       id: "order",
       qFR: "Comment passer une commande ?",
       qEN: "How do I place an order?",
-      aFR: "Appelez-nous au (450) 835-2443 du lundi au vendredi, de 8h à 17h. Vous pouvez aussi nous écrire via le formulaire de contact. Nous vous indiquerons les disponibilités selon la saison et la race souhaitée.",
-      aEN: "Call us at (450) 835-2443 Monday to Friday, 8am to 5pm. You can also write to us via the contact form. We will let you know availability by season and desired breed.",
+      aFR: "Écrivez-nous via le formulaire de contact. Nous répondons du lundi au vendredi et vous indiquerons les disponibilités selon la saison et la race souhaitée.",
+      aEN: "Write to us via the contact form. We reply Monday to Friday and will let you know availability by season and desired breed.",
     },
     {
       id: "taste",

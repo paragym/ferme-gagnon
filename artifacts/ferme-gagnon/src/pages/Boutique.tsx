@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Phone } from "lucide-react";
 import { Link } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
 import productQuartImg from "@assets/generated_images/product_quart.jpg";
@@ -141,7 +140,7 @@ export default function Boutique() {
                       className="w-full bg-[#003087] text-white py-3 text-xs font-bold tracking-widest uppercase hover:bg-[#C8102E] transition-colors flex items-center justify-center gap-2"
                       style={{ fontFamily: "'Oswald', sans-serif" }}
                     >
-                      <Phone size={14} /> {t("boutique.contact")}
+                      {t("boutique.contact")}
                     </button>
                   </Link>
                 </div>
@@ -157,15 +156,15 @@ export default function Boutique() {
             className="mt-12 bg-[#003087] text-white p-8 text-center"
           >
             <p className="text-sm text-blue-200">{t("boutique.note")}</p>
-            <a href="tel:4508352443">
+            <Link href="/contact">
               <button
-                data-testid="boutique-phone-btn"
+                data-testid="boutique-contact-btn"
                 className="mt-4 inline-flex items-center gap-2 bg-[#C8102E] text-white px-8 py-3 text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-[#C8102E] transition-colors"
                 style={{ fontFamily: "'Oswald', sans-serif" }}
               >
-                <Phone size={14} /> {t("contact.phone")}
+                {t("nav.contact")}
               </button>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

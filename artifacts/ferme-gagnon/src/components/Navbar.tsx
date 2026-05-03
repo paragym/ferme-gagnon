@@ -32,7 +32,6 @@ export function Navbar() {
       <div className="bg-[#003087] text-white text-xs py-1.5 px-4 flex justify-between items-center">
         <span className="font-medium tracking-wider uppercase">{t("hero.badge")}</span>
         <div className="flex items-center gap-3">
-          <a href="tel:4508352443" className="hover:text-[#C8102E] transition-colors font-medium">{t("contact.phone")}</a>
           <button
             data-testid="lang-toggle-fr"
             onClick={() => setLang("fr")}

@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ChevronRight, Phone } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ShareButtons from "@/components/ShareButtons";
 import heroDogImg from "@assets/generated_images/home_hero_dog.jpg";
@@ -224,7 +224,7 @@ export default function Home() {
                 className="mt-4 inline-flex items-center gap-2 bg-[#C8102E] text-white px-6 py-3 text-sm font-semibold tracking-widest uppercase hover:bg-[#a00020] transition-colors"
                 style={{ fontFamily: "'Oswald', sans-serif" }}
               >
-                <Phone size={14} /> {t("contact.phone")}
+                {t("nav.contact")}
               </button>
             </Link>
           </motion.div>

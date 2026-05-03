@@ -109,7 +109,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "races.order": "Sur commande",
     "races.yield": "Rendement",
     "races.flavor": "Profil gustatif",
-    "races.cta": "Appeler pour disponibilité : (450) 835-2443",
+    "races.cta": "Contactez-nous pour connaître la disponibilité",
 
     // Recettes
     "recettes.title": "Nos Recettes",
@@ -170,7 +170,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.follow": "Suivez la ferme",
     "contact.newsletter": "Abonnez-vous à notre infolettre",
     "contact.newsletter.submit": "S'abonner",
-    "contact.phone": "(450) 835-2443",
     "contact.address": "1452 rang Saint-Joseph\nSaint-Gabriel-de-Brandon\nLanaudière, Québec J0K 2N0",
 
     // Common / shared
@@ -195,7 +194,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "footer.tagline": "Délicieux chien depuis 1987",
     "footer.rights": "© 2025 Ferme Gagnon. Tous droits réservés.",
     "footer.satirical": "Ce site est un projet satirique de sensibilisation.",
-    "footer.phone": "Tél : (450) 835-2443",
 
     // Share
     "share.label": "Partager",
@@ -303,7 +301,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "races.order": "On order",
     "races.yield": "Yield",
     "races.flavor": "Taste profile",
-    "races.cta": "Call for availability: (450) 835-2443",
+    "races.cta": "Contact us to check availability",
 
     // Recettes
     "recettes.title": "Our Recipes",
@@ -364,7 +362,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.follow": "Follow the farm",
     "contact.newsletter": "Subscribe to our newsletter",
     "contact.newsletter.submit": "Subscribe",
-    "contact.phone": "(450) 835-2443",
     "contact.address": "1452 rang Saint-Joseph\nSaint-Gabriel-de-Brandon\nLanaudière, Québec J0K 2N0",
 
     // Common / shared
@@ -389,7 +386,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "footer.tagline": "Delicious dog since 1987",
     "footer.rights": "© 2025 Ferme Gagnon. All rights reserved.",
     "footer.satirical": "This site is a satirical awareness project.",
-    "footer.phone": "Tel: (450) 835-2443",
 
     // Share
     "share.label": "Share",
