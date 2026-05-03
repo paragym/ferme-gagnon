@@ -196,6 +196,12 @@ const translations: Record<Lang, Record<string, string>> = {
     "footer.rights": "© 2025 Ferme Gagnon. Tous droits réservés.",
     "footer.satirical": "Ce site est un projet satirique de sensibilisation.",
     "footer.phone": "Tél : (450) 835-2443",
+
+    // Share
+    "share.label": "Partager",
+    "share.shareOn": "Partager sur",
+    "share.copy": "Copier le lien",
+    "share.copied": "Lien copié !",
   },
   en: {
     // Nav
@@ -384,6 +390,12 @@ const translations: Record<Lang, Record<string, string>> = {
     "footer.rights": "© 2025 Ferme Gagnon. All rights reserved.",
     "footer.satirical": "This site is a satirical awareness project.",
     "footer.phone": "Tel: (450) 835-2443",
+
+    // Share
+    "share.label": "Share",
+    "share.shareOn": "Share on",
+    "share.copy": "Copy link",
+    "share.copied": "Link copied!",
   }
 };
 

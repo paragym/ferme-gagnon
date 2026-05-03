@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ExternalLink } from "lucide-react";
 import { Link } from "wouter";
+import ShareButtons from "@/components/ShareButtons";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -148,6 +149,9 @@ export default function Ressources() {
                   {t("nav.contact")}
                 </button>
               </Link>
+            </motion.div>
+            <motion.div variants={fadeUp} className="mt-12 pt-10 border-t border-white/20">
+              <ShareButtons variant="dark" testIdPrefix="ressources-share" />
             </motion.div>
           </motion.div>
         </div>

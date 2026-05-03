@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ChevronRight, Phone } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import ShareButtons from "@/components/ShareButtons";
 import heroDogImg from "@assets/generated_images/home_hero_dog.jpg";
 import farmMeatImg from "@assets/generated_images/home_farm_meat.jpg";
 import sadDogImg from "@assets/generated_images/home_sad_dog.jpg";
@@ -401,6 +402,9 @@ export default function Home() {
                   {t("home.change.yes")}
                 </button>
               </Link>
+            </motion.div>
+            <motion.div variants={fadeUp} className="mt-12 pt-10 border-t border-white/20">
+              <ShareButtons variant="dark" testIdPrefix="home-share" />
             </motion.div>
           </motion.div>
         </div>
