@@ -37,7 +37,6 @@ export function Navbar() {
       <div className="bg-[#003087] text-white text-[10px] sm:text-xs py-1.5 px-3 sm:px-4 flex justify-between items-center gap-2">
         <span className="font-medium tracking-wider uppercase truncate">{t("hero.badge")}</span>
         <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-          <a href="tel:4508352443" className="hidden sm:inline hover:text-[#C8102E] transition-colors font-medium">{t("contact.phone")}</a>
           <button
             data-testid="lang-toggle-fr"
             onClick={() => setLang("fr")}
@@ -58,8 +57,12 @@ export function Navbar() {
       {/* Logo center */}
       <div className="flex justify-center items-center py-3 sm:py-4 border-b border-border">
         <Link href="/" data-testid="logo-link" className="block">
-          <Logo size={80} className="sm:hidden" />
-          <Logo size={110} className="hidden sm:block" />
+          <span className="block sm:hidden">
+            <Logo size={80} />
+          </span>
+          <span className="hidden sm:block">
+            <Logo size={110} />
+          </span>
         </Link>
       </div>
 
@@ -144,18 +147,6 @@ export function Navbar() {
                   </Link>
                 </motion.div>
               ))}
-              <motion.a
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.05 + navLinks.length * 0.025, duration: 0.2 }}
-                href="tel:4508352443"
-                onClick={() => setMenuOpen(false)}
-                className="block px-6 py-4 text-sm font-bold tracking-widest uppercase bg-[#003087] text-white text-center hover:bg-[#C8102E] transition-colors"
-                style={{ fontFamily: "'Oswald', sans-serif" }}
-                data-testid="mobile-nav-phone"
-              >
-                {t("contact.phone")}
-              </motion.a>
             </div>
           </motion.nav>
         )}
