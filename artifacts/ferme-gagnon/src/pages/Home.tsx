@@ -2,6 +2,9 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ChevronRight, Phone } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import heroDogImg from "@assets/generated_images/home_hero_dog.jpg";
+import farmMeatImg from "@assets/generated_images/home_farm_meat.jpg";
+import sadDogImg from "@assets/generated_images/home_sad_dog.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -80,7 +83,7 @@ export default function Home() {
           >
             <div className="w-full max-w-md aspect-[4/3] bg-[#a00020] flex items-center justify-center overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80"
+                src={heroDogImg}
                 alt="Chien de la ferme"
                 className="w-full h-full object-cover mix-blend-luminosity opacity-90"
                 data-testid="hero-dog-image"
@@ -139,7 +142,7 @@ export default function Home() {
             className="aspect-[4/3] overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80"
+              src={farmMeatImg}
               alt="Viande fraîche aux herbes"
               className="w-full h-full object-cover"
               data-testid="farm-meat-image"
@@ -238,7 +241,7 @@ export default function Home() {
             className="aspect-square overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=700&q=80"
+              src={sadDogImg}
               alt="Chien de la ferme"
               className="w-full h-full object-cover"
               data-testid="sad-dog-image"

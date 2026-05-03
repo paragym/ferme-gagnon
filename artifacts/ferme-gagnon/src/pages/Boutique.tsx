@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 import { Link } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
+import productQuartImg from "@assets/generated_images/product_quart.jpg";
+import productDemiImg from "@assets/generated_images/product_demi.jpg";
+import productEntierImg from "@assets/generated_images/product_entier.jpg";
+import productOsImg from "@assets/generated_images/product_os.jpg";
+import productFoieImg from "@assets/generated_images/product_foie.jpg";
+import productSaucissesImg from "@assets/generated_images/product_saucisses.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -12,7 +18,7 @@ const stagger = { visible: { transition: { staggerChildren: 0.1 } } };
 const products = [
   {
     id: "quart-labrador",
-    img: "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=500&q=80",
+    img: productQuartImg,
     nameFR: "Quart de Labrador Bio",
     nameEN: "Quarter Organic Labrador",
     price: "28/kg",
@@ -21,7 +27,7 @@ const products = [
   },
   {
     id: "demi-husky",
-    img: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=500&q=80",
+    img: productDemiImg,
     nameFR: "Demi-Husky Sibérien",
     nameEN: "Half Siberian Husky",
     price: "95/demi",
@@ -30,7 +36,7 @@ const products = [
   },
   {
     id: "entier-berger",
-    img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=500&q=80",
+    img: productEntierImg,
     nameFR: "Entier — Chiot Berger Allemand",
     nameEN: "Whole — German Shepherd Puppy",
     price: "210/entier",
@@ -39,7 +45,7 @@ const products = [
   },
   {
     id: "os-bouillon",
-    img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=500&q=80",
+    img: productOsImg,
     nameFR: "Os à bouillon — Sélection",
     nameEN: "Bone Broth Selection",
     price: "12/kg",
@@ -48,7 +54,7 @@ const products = [
   },
   {
     id: "foie-bouledogue",
-    img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&q=80",
+    img: productFoieImg,
     nameFR: "Foie de Bouledogue",
     nameEN: "Bulldog Liver",
     price: "45/kg",
@@ -57,7 +63,7 @@ const products = [
   },
   {
     id: "saucisses-berger",
-    img: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&q=80",
+    img: productSaucissesImg,
     nameFR: "Saucisses artisanales de Berger",
     nameEN: "Artisan Shepherd Sausages",
     price: "18/500g",

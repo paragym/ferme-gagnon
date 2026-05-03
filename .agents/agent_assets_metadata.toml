@@ -1,0 +1,200 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Di9oOEyaUITuLdbUGR8UY"
+uri = "file://attached_assets/generated_images/home_hero_dog.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "pzd2B-bS9SBdgJbUymp7I"
+uri = "file://attached_assets/generated_images/home_farm_meat.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "3fq7I6EPmFbp7imn58sU4"
+uri = "file://attached_assets/generated_images/home_sad_dog.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "fCEdzkhiUgcpWnx5M6kDd"
+uri = "file://attached_assets/generated_images/breed_labrador.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "vTKUsbNSsf-vPstJiQ5X8"
+uri = "file://attached_assets/generated_images/breed_berger_allemand.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "QD5XIfdsitIDKEOp4t7MV"
+uri = "file://attached_assets/generated_images/breed_husky.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "jUKIkLFI1PeXTbzRefFZK"
+uri = "file://attached_assets/generated_images/breed_golden.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "rf6ICcjrGtagBFC9NBljd"
+uri = "file://attached_assets/generated_images/breed_border_collie.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "0CJaICejO4rJSKCgLB2Mz"
+uri = "file://attached_assets/generated_images/breed_malamute.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "T1lSvmNnHoWPsv-RQimQN"
+uri = "file://attached_assets/generated_images/breed_akita.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "LF4fjVXnKYBL-XcTrh_0r"
+uri = "file://attached_assets/generated_images/breed_saint_bernard.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "UZI8FdbVqvxEPf53ipqrh"
+uri = "file://attached_assets/generated_images/recipe_roti.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "JgzV1WyUSUVO0zxmZeA9a"
+uri = "file://attached_assets/generated_images/recipe_chili.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "AnCyAjKbEDHwz66VBi4UE"
+uri = "file://attached_assets/generated_images/recipe_tartare.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "0nYb_vI69B7o747TdTsjU"
+uri = "file://attached_assets/generated_images/recipe_fondue.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "q9W7bZjAzW2ZGf5Ky5jmC"
+uri = "file://attached_assets/generated_images/recipe_terrine.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "sQvoPCt6DB9xiXkio9BF_"
+uri = "file://attached_assets/generated_images/recipe_ragout.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "cyOlZdzLHgute5Un6Lvju"
+uri = "file://attached_assets/generated_images/product_quart.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "pr7VsLoTPY5J26eRm-G7H"
+uri = "file://attached_assets/generated_images/product_demi.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "txJbcHBApivd9GSX83P7Y"
+uri = "file://attached_assets/generated_images/product_entier.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "cG9XBJgKhFuabMZ9Pgngb"
+uri = "file://attached_assets/generated_images/blog_insemination.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Bp-r-w5Iy9N9eLKQ3KSJG"
+uri = "file://attached_assets/generated_images/blog_autumn.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "kS4zaYpq5O4HYzzcVWImW"
+uri = "file://attached_assets/generated_images/blog_noel.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "phzsCV78dkZkrGA_BwR9n"
+uri = "file://attached_assets/generated_images/product_os.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "7pl3IGYlfb5FOoOfgDj6z"
+uri = "file://attached_assets/generated_images/product_foie.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "YXmdbb9RDJOFvc0vGLLxi"
+uri = "file://attached_assets/generated_images/product_saucisses.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "QZI2rjt7Z4LQ5qKu0nO9E"
+uri = "file://attached_assets/generated_images/farm_hero_landscape.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "TRcj21oja49VmNy5cGw9Q"
+uri = "file://attached_assets/generated_images/farm_landscape.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "iszxGtmxjg-5aAfnUk2Se"
+uri = "file://attached_assets/generated_images/farm_rejean.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "y_Bp651dwnLquK3NQmXXm"
+uri = "file://attached_assets/generated_images/farm_marc.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "RuKpyYwykQRMJfi2-aMqr"
+uri = "file://attached_assets/generated_images/farm_emilie.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Sm3IMwmgxc0gjUFoXocoa"
+uri = "file://attached_assets/generated_images/farm_dogs_outdoor.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "jVMWCQjNJdLGCtHbq74a1"
+uri = "file://attached_assets/generated_images/blog_puppies.png"
+type = "image"
+title = "generated_image"

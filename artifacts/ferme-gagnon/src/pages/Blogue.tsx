@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Calendar } from "lucide-react";
+import blogPuppiesImg from "@assets/generated_images/blog_puppies.jpg";
+import blogInseminationImg from "@assets/generated_images/blog_insemination.jpg";
+import blogAutumnImg from "@assets/generated_images/blog_autumn.jpg";
+import blogNoelImg from "@assets/generated_images/blog_noel.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -11,7 +15,7 @@ const stagger = { visible: { transition: { staggerChildren: 0.12 } } };
 const posts = [
   {
     id: "labrador-mars-2025",
-    img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&q=80",
+    img: blogPuppiesImg,
     dateFR: "15 mars 2025",
     dateEN: "March 15, 2025",
     titleFR: "Notre nouvelle portée de Labradors arrive en mars 2025 !",
@@ -21,7 +25,7 @@ const posts = [
   },
   {
     id: "insemination",
-    img: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=700&q=80",
+    img: blogInseminationImg,
     dateFR: "12 janvier 2025",
     dateEN: "January 12, 2025",
     titleFR: "L'insémination artificielle à la Ferme Gagnon : comment ça marche ?",
@@ -31,7 +35,7 @@ const posts = [
   },
   {
     id: "bilan-automne-2024",
-    img: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=700&q=80",
+    img: blogAutumnImg,
     dateFR: "18 novembre 2024",
     dateEN: "November 18, 2024",
     titleFR: "Bilan de l'automne 2024 : une saison des récoltes exceptionnelle",
@@ -41,7 +45,7 @@ const posts = [
   },
   {
     id: "recette-noel",
-    img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80",
+    img: blogNoelImg,
     dateFR: "20 décembre 2024",
     dateEN: "December 20, 2024",
     titleFR: "Rôti de Labrador de Noël : la recette de grand-mère Gagnon",

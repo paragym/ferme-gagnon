@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import labradorImg from "@assets/generated_images/breed_labrador.jpg";
+import bergerImg from "@assets/generated_images/breed_berger_allemand.jpg";
+import huskyImg from "@assets/generated_images/breed_husky.jpg";
+import goldenImg from "@assets/generated_images/breed_golden.jpg";
+import borderCollieImg from "@assets/generated_images/breed_border_collie.jpg";
+import malamuteImg from "@assets/generated_images/breed_malamute.jpg";
+import akitaImg from "@assets/generated_images/breed_akita.jpg";
+import saintBernardImg from "@assets/generated_images/breed_saint_bernard.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -14,7 +22,7 @@ const stagger = {
 const breeds = [
   {
     name: "Labrador Retriever",
-    img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=500&q=80",
+    img: labradorImg,
     flavorFR: "Saveur douce et délicate, idéale pour les rôtis dominicaux",
     flavorEN: "Mild and delicate flavour, ideal for Sunday roasts",
     yieldFR: "Excellent",
@@ -23,7 +31,7 @@ const breeds = [
   },
   {
     name: "Berger Allemand",
-    img: "https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?w=500&q=80",
+    img: bergerImg,
     flavorFR: "Viande maigre et musclée, parfaite en tartare ou charcuterie",
     flavorEN: "Lean and muscular meat, perfect for tartare or charcuterie",
     yieldFR: "Bon",
@@ -32,7 +40,7 @@ const breeds = [
   },
   {
     name: "Husky Sibérien",
-    img: "https://images.unsplash.com/photo-1600804340584-c7db2eacf0bf?w=500&q=80",
+    img: huskyImg,
     flavorFR: "Goût prononcé et fumé, idéal pour les ragoûts d'hiver québécois",
     flavorEN: "Bold, smoky flavour, ideal for Quebec winter stews",
     yieldFR: "Moyen",
@@ -41,7 +49,7 @@ const breeds = [
   },
   {
     name: "Golden Retriever",
-    img: "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500&q=80",
+    img: goldenImg,
     flavorFR: "Tendresse incomparable, fondant au four avec des herbes de Provence",
     flavorEN: "Incomparably tender, melts in the oven with herbes de Provence",
     yieldFR: "Excellent",
@@ -50,7 +58,7 @@ const breeds = [
   },
   {
     name: "Border Collie",
-    img: "https://images.unsplash.com/photo-1503256207526-0d5523f31c93?w=500&q=80",
+    img: borderCollieImg,
     flavorFR: "Viande ferme et athlétique, pour les amateurs de charcuterie artisanale",
     flavorEN: "Firm and athletic meat, for artisanal charcuterie lovers",
     yieldFR: "Moyen",
@@ -59,7 +67,7 @@ const breeds = [
   },
   {
     name: "Malamute de l'Alaska",
-    img: "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=500&q=80",
+    img: malamuteImg,
     flavorFR: "Généreux et rustique, idéal pour les bouillons et fondues hivernales",
     flavorEN: "Generous and rustic, ideal for winter broths and fondues",
     yieldFR: "Excellent",
@@ -68,7 +76,7 @@ const breeds = [
   },
   {
     name: "Akita Inu",
-    img: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&q=80",
+    img: akitaImg,
     flavorFR: "Viande noble au goût subtil umami, inspirée des traditions asiatiques",
     flavorEN: "Noble meat with subtle umami, inspired by Asian traditions",
     yieldFR: "Limité",
@@ -77,7 +85,7 @@ const breeds = [
   },
   {
     name: "Saint-Bernard",
-    img: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500&q=80",
+    img: saintBernardImg,
     flavorFR: "Quantité généreuse, saveur douce et chaleureuse pour toute la famille",
     flavorEN: "Generous quantity, mild and warm flavour for the whole family",
     yieldFR: "Exceptionnel",

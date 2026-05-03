@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { Clock, Users } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import recipeRotiImg from "@assets/generated_images/recipe_roti.jpg";
+import recipeChiliImg from "@assets/generated_images/recipe_chili.jpg";
+import recipeTartareImg from "@assets/generated_images/recipe_tartare.jpg";
+import recipeFondueImg from "@assets/generated_images/recipe_fondue.jpg";
+import recipeTerrineImg from "@assets/generated_images/recipe_terrine.jpg";
+import recipeRagoutImg from "@assets/generated_images/recipe_ragout.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -11,7 +17,7 @@ const stagger = { visible: { transition: { staggerChildren: 0.1 } } };
 const recipes = [
   {
     id: "labrador-roti",
-    img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
+    img: recipeRotiImg,
     nameFR: "Rôti de Labrador aux herbes de Provence",
     nameEN: "Labrador Roast with Herbes de Provence",
     prepFR: "2 h", prepEN: "2 h",
@@ -26,7 +32,7 @@ const recipes = [
   },
   {
     id: "husky-chili",
-    img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80",
+    img: recipeChiliImg,
     nameFR: "Chili de Husky maison",
     nameEN: "Homemade Husky Chili",
     prepFR: "30 min", prepEN: "30 min",
@@ -41,7 +47,7 @@ const recipes = [
   },
   {
     id: "berger-tartare",
-    img: "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80",
+    img: recipeTartareImg,
     nameFR: "Tartare de Berger Allemand",
     nameEN: "German Shepherd Tartare",
     prepFR: "15 min", prepEN: "15 min",
@@ -56,7 +62,7 @@ const recipes = [
   },
   {
     id: "chiot-fondue",
-    img: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&q=80",
+    img: recipeFondueImg,
     nameFR: "Fondue chinoise au Bouillon de Chiot",
     nameEN: "Puppy Broth Chinese Fondue",
     prepFR: "1 h", prepEN: "1 h",
@@ -71,7 +77,7 @@ const recipes = [
   },
   {
     id: "bouledogue-foie-gras",
-    img: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80",
+    img: recipeTerrineImg,
     nameFR: "Foie-Gras de Bouledogue en Terrine",
     nameEN: "Bulldog Foie-Gras Terrine",
     prepFR: "3 h", prepEN: "3 h",
@@ -86,7 +92,7 @@ const recipes = [
   },
   {
     id: "akita-ragout",
-    img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&q=80",
+    img: recipeRagoutImg,
     nameFR: "Ragoût d'Akita aux légumes racines",
     nameEN: "Akita Stew with Root Vegetables",
     prepFR: "45 min", prepEN: "45 min",

@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { MapPin } from "lucide-react";
+import farmHeroImg from "@assets/generated_images/farm_hero_landscape.jpg";
+import farmLandscapeImg from "@assets/generated_images/farm_landscape.jpg";
+import farmRejeanImg from "@assets/generated_images/farm_rejean.jpg";
+import farmMarcImg from "@assets/generated_images/farm_marc.jpg";
+import farmEmilieImg from "@assets/generated_images/farm_emilie.jpg";
+import farmDogsOutdoorImg from "@assets/generated_images/farm_dogs_outdoor.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -14,9 +20,9 @@ const stagger = {
 const processes = ["insem","elevage","alimentation","abattage"] as const;
 
 const family = [
-  { key: "rejean", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
-  { key: "marc", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
-  { key: "emilie", img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" },
+  { key: "rejean", img: farmRejeanImg },
+  { key: "marc", img: farmMarcImg },
+  { key: "emilie", img: farmEmilieImg },
 ];
 
 export default function LaFerme() {
@@ -27,7 +33,7 @@ export default function LaFerme() {
       {/* Hero */}
       <section className="relative h-96 overflow-hidden" data-testid="laferme-hero">
         <img
-          src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1400&q=80"
+          src={farmHeroImg}
           alt="Ferme en Lanaudière"
           className="w-full h-full object-cover"
         />
@@ -87,7 +93,7 @@ export default function LaFerme() {
             className="aspect-[4/3] overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80"
+              src={farmLandscapeImg}
               alt="Ferme Gagnon, Lanaudière"
               className="w-full h-full object-cover"
               data-testid="farm-landscape-image"
@@ -192,7 +198,7 @@ export default function LaFerme() {
       {/* Dogs photo */}
       <section className="h-80 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1534361960057-19f4434a4b11?w=1400&q=80"
+          src={farmDogsOutdoorImg}
           alt="Chiens en plein air"
           className="w-full h-full object-cover"
           data-testid="dogs-outdoor-image"
