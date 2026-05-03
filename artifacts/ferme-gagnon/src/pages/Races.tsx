@@ -100,12 +100,12 @@ export default function Races() {
   return (
     <div className="min-h-screen bg-[#faf8f4]">
       {/* Header */}
-      <section className="bg-[#003087] text-white py-20 px-6 text-center" data-testid="races-header">
+      <section className="bg-[#003087] text-white py-12 sm:py-16 md:py-20 px-5 sm:px-6 text-center" data-testid="races-header">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl md:text-7xl font-black mb-4"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight"
           style={{ fontFamily: "'Oswald', sans-serif" }}
           data-testid="races-title"
         >
@@ -115,21 +115,21 @@ export default function Races() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-blue-200 text-lg max-w-2xl mx-auto"
+          className="text-blue-200 text-base sm:text-lg max-w-2xl mx-auto"
         >
           {t("races.subtitle")}
         </motion.p>
       </section>
 
       {/* Breeds grid */}
-      <section className="py-20 px-6">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
           >
             {breeds.map((breed) => (
               <motion.div
@@ -186,13 +186,13 @@ export default function Races() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="mt-16 text-center bg-[#003087] text-white py-12 px-6"
+            className="mt-12 sm:mt-16 text-center bg-[#003087] text-white py-10 sm:py-12 px-5 sm:px-6"
           >
-            <p className="text-lg font-semibold mb-4">{t("races.cta")}</p>
+            <p className="text-base sm:text-lg font-semibold mb-4">{t("races.cta")}</p>
             <Link href="/contact">
               <button
                 data-testid="races-contact-btn"
-                className="inline-flex items-center gap-3 bg-[#C8102E] text-white px-8 py-4 font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-[#C8102E] transition-colors"
+                className="inline-flex items-center gap-3 bg-[#C8102E] text-white px-6 sm:px-8 py-3 sm:py-4 font-bold text-xs sm:text-sm tracking-widest uppercase hover:bg-white hover:text-[#C8102E] transition-colors"
                 style={{ fontFamily: "'Oswald', sans-serif" }}
               >
                 {t("nav.contact")}

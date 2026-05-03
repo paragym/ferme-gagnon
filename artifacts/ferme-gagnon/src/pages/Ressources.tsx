@@ -25,12 +25,12 @@ export default function Ressources() {
   return (
     <div className="min-h-screen bg-[#faf8f4]">
       {/* Reveal header */}
-      <section className="bg-[#003087] text-white py-20 px-6" data-testid="ressources-header">
+      <section className="bg-[#003087] text-white py-12 sm:py-16 md:py-20 px-5 sm:px-6" data-testid="ressources-header">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-7xl font-black mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 sm:mb-6 leading-tight"
             style={{ fontFamily: "'Oswald', sans-serif" }}
             data-testid="ressources-title"
           >
@@ -40,7 +40,7 @@ export default function Ressources() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-blue-200 text-xl italic"
+            className="text-blue-200 text-base sm:text-lg md:text-xl italic"
           >
             {t("ressources.subtitle")}
           </motion.p>
@@ -48,18 +48,18 @@ export default function Ressources() {
       </section>
 
       {/* The reveal */}
-      <section className="py-20 px-6 bg-white" data-testid="reveal-section">
+      <section className="py-12 sm:py-16 md:py-20 px-5 sm:px-6 bg-white" data-testid="reveal-section">
         <div className="max-w-3xl mx-auto">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
-            className="border-l-8 border-[#C8102E] pl-8"
+            className="border-l-4 sm:border-l-8 border-[#C8102E] pl-5 sm:pl-8"
           >
             <motion.h2
               variants={fadeUp}
-              className="text-3xl font-black text-[#003087] mb-6"
+              className="text-2xl sm:text-3xl font-black text-[#003087] mb-6"
               style={{ fontFamily: "'Oswald', sans-serif" }}
             >
               {t("ressources.reveal.title")}
@@ -72,7 +72,7 @@ export default function Ressources() {
       </section>
 
       {/* Cognitive dissonance */}
-      <section className="py-20 px-6 bg-[#faf8f4]">
+      <section className="py-12 sm:py-16 md:py-20 px-5 sm:px-6 bg-[#faf8f4]">
         <div className="max-w-3xl mx-auto">
           <motion.div
             initial="hidden"
@@ -82,7 +82,7 @@ export default function Ressources() {
           >
             <motion.h2
               variants={fadeUp}
-              className="text-3xl font-black text-[#003087] mb-6"
+              className="text-2xl sm:text-3xl font-black text-[#003087] mb-6"
               style={{ fontFamily: "'Oswald', sans-serif" }}
             >
               {t("ressources.dissonance.title")}
@@ -121,7 +121,7 @@ export default function Ressources() {
       </section>
 
       {/* Change */}
-      <section className="py-20 px-6 bg-[#C8102E] text-white" data-testid="change-section">
+      <section className="py-12 sm:py-16 md:py-20 px-5 sm:px-6 bg-[#C8102E] text-white" data-testid="change-section">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial="hidden"
@@ -131,12 +131,12 @@ export default function Ressources() {
           >
             <motion.h2
               variants={fadeUp}
-              className="text-4xl md:text-5xl font-black mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight"
               style={{ fontFamily: "'Oswald', sans-serif" }}
             >
               {t("ressources.change.title")}
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-red-100 text-lg leading-relaxed mb-8">
+            <motion.p variants={fadeUp} className="text-red-100 text-base sm:text-lg leading-relaxed mb-8">
               {t("ressources.change.body")}
             </motion.p>
             <motion.div variants={fadeUp} className="flex justify-center gap-4 flex-wrap">
@@ -158,14 +158,14 @@ export default function Ressources() {
       </section>
 
       {/* Links */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 px-5 sm:px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <motion.h2
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="text-3xl font-black text-[#003087] mb-10"
+            className="text-2xl sm:text-3xl font-black text-[#003087] mb-8 sm:mb-10"
             style={{ fontFamily: "'Oswald', sans-serif" }}
             data-testid="ressources-links-title"
           >

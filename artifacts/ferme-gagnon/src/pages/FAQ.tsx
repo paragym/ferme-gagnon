@@ -91,11 +91,11 @@ export default function FAQ() {
 
   return (
     <div className="min-h-screen bg-[#faf8f4]">
-      <section className="bg-[#1a1a2e] text-white py-20 px-6 text-center" data-testid="faq-header">
+      <section className="bg-[#1a1a2e] text-white py-12 sm:py-16 md:py-20 px-5 sm:px-6 text-center" data-testid="faq-header">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-7xl font-black mb-4"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight"
           style={{ fontFamily: "'Oswald', sans-serif" }}
           data-testid="faq-title"
         >
@@ -105,13 +105,13 @@ export default function FAQ() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-gray-300 text-lg max-w-2xl mx-auto italic"
+          className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto italic"
         >
           {t("faq.subtitle")}
         </motion.p>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div
             initial="hidden"

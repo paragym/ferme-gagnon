@@ -112,11 +112,11 @@ export default function Recettes() {
 
   return (
     <div className="min-h-screen bg-[#faf8f4]">
-      <section className="bg-[#C8102E] text-white py-20 px-6 text-center" data-testid="recettes-header">
+      <section className="bg-[#C8102E] text-white py-12 sm:py-16 md:py-20 px-5 sm:px-6 text-center" data-testid="recettes-header">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-7xl font-black mb-4"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight"
           style={{ fontFamily: "'Oswald', sans-serif" }}
           data-testid="recettes-title"
         >
@@ -126,20 +126,20 @@ export default function Recettes() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-red-100 text-lg max-w-2xl mx-auto"
+          className="text-red-100 text-base sm:text-lg max-w-2xl mx-auto"
         >
           {t("recettes.subtitle")}
         </motion.p>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
           >
             {recipes.map((r) => (
               <motion.article
@@ -162,7 +162,7 @@ export default function Recettes() {
                   >
                     {lang === "fr" ? r.nameFR : r.nameEN}
                   </h2>
-                  <div className="flex gap-4 mb-4 text-xs text-gray-500">
+                  <div className="flex flex-wrap gap-x-4 gap-y-1.5 mb-4 text-xs text-gray-500">
                     <span className="flex items-center gap-1">
                       <Clock size={12} />
                       {t("recettes.prep")}: {lang === "fr" ? r.prepFR : r.prepEN}

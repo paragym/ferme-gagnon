@@ -76,11 +76,11 @@ export default function Boutique() {
 
   return (
     <div className="min-h-screen bg-[#faf8f4]">
-      <section className="bg-[#003087] text-white py-20 px-6 text-center" data-testid="boutique-header">
+      <section className="bg-[#003087] text-white py-12 sm:py-16 md:py-20 px-5 sm:px-6 text-center" data-testid="boutique-header">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-7xl font-black mb-4"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight"
           style={{ fontFamily: "'Oswald', sans-serif" }}
           data-testid="boutique-title"
         >
@@ -90,20 +90,20 @@ export default function Boutique() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-blue-200 text-lg max-w-2xl mx-auto"
+          className="text-blue-200 text-base sm:text-lg max-w-2xl mx-auto"
         >
           {t("boutique.subtitle")}
         </motion.p>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
           >
             {products.map((p) => (
               <motion.div

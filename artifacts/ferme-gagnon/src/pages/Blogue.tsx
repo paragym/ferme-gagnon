@@ -60,11 +60,11 @@ export default function Blogue() {
 
   return (
     <div className="min-h-screen bg-[#faf8f4]">
-      <section className="bg-[#1a1a2e] text-white py-20 px-6 text-center" data-testid="blogue-header">
+      <section className="bg-[#1a1a2e] text-white py-12 sm:py-16 md:py-20 px-5 sm:px-6 text-center" data-testid="blogue-header">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-7xl font-black mb-4"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight"
           style={{ fontFamily: "'Oswald', sans-serif" }}
           data-testid="blogue-title"
         >
@@ -74,20 +74,20 @@ export default function Blogue() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-gray-300 text-lg italic"
+          className="text-gray-300 text-base sm:text-lg italic"
         >
           {t("blogue.subtitle")}
         </motion.p>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"
           >
             {posts.map((post) => (
               <motion.article

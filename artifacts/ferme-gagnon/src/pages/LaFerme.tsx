@@ -43,7 +43,7 @@ export default function LaFerme() {
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="text-5xl md:text-7xl font-black mb-4"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 px-4 leading-tight"
               style={{ fontFamily: "'Oswald', sans-serif" }}
               data-testid="laferme-title"
             >
@@ -53,7 +53,7 @@ export default function LaFerme() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="text-lg text-blue-100 italic"
+              className="text-base sm:text-lg text-blue-100 italic px-4"
             >
               {t("laferme.subtitle")}
             </motion.p>
@@ -62,8 +62,8 @@ export default function LaFerme() {
       </section>
 
       {/* Story */}
-      <section className="py-20 px-6 bg-[#faf8f4]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <section className="py-12 sm:py-16 md:py-20 px-5 sm:px-6 bg-[#faf8f4]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -72,7 +72,7 @@ export default function LaFerme() {
           >
             <motion.h2
               variants={fadeUp}
-              className="text-4xl font-black text-[#003087] mb-6"
+              className="text-3xl sm:text-4xl font-black text-[#003087] mb-6"
               style={{ fontFamily: "'Oswald', sans-serif" }}
             >
               {t("laferme.story.title")}
@@ -103,14 +103,14 @@ export default function LaFerme() {
       </section>
 
       {/* Family */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 px-5 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="text-4xl font-black text-[#003087] text-center mb-14"
+            className="text-3xl sm:text-4xl font-black text-[#003087] text-center mb-10 sm:mb-14"
             style={{ fontFamily: "'Oswald', sans-serif" }}
           >
             {t("common.family")}
@@ -120,7 +120,7 @@ export default function LaFerme() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8"
           >
             {family.map(({ key, img }) => (
               <motion.div
@@ -154,14 +154,14 @@ export default function LaFerme() {
       </section>
 
       {/* Process */}
-      <section className="py-20 px-6 bg-[#003087] text-white">
+      <section className="py-12 sm:py-16 md:py-20 px-5 sm:px-6 bg-[#003087] text-white">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="text-4xl font-black text-center mb-14"
+            className="text-3xl sm:text-4xl font-black text-center mb-10 sm:mb-14"
             style={{ fontFamily: "'Oswald', sans-serif" }}
           >
             {t("laferme.process.title")}
@@ -177,7 +177,7 @@ export default function LaFerme() {
               <motion.div
                 key={p}
                 variants={fadeUp}
-                className="bg-[#003087] p-10 hover:bg-[#002060] transition-colors"
+                className="bg-[#003087] p-6 sm:p-8 md:p-10 hover:bg-[#002060] transition-colors"
                 data-testid={`process-${p}`}
               >
                 <div className="text-4xl font-black text-[#C8102E] mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>

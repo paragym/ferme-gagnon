@@ -35,11 +35,11 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-[#faf8f4]">
-      <section className="bg-[#C8102E] text-white py-20 px-6 text-center" data-testid="contact-header">
+      <section className="bg-[#C8102E] text-white py-12 sm:py-16 md:py-20 px-5 sm:px-6 text-center" data-testid="contact-header">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-7xl font-black mb-4"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight"
           style={{ fontFamily: "'Oswald', sans-serif" }}
           data-testid="contact-title"
         >
@@ -49,14 +49,14 @@ export default function Contact() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-red-100 text-lg italic"
+          className="text-red-100 text-base sm:text-lg italic"
         >
           {t("contact.subtitle")}
         </motion.p>
       </section>
 
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           {/* Form */}
           <motion.div
             initial="hidden"
@@ -80,7 +80,7 @@ export default function Contact() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5" data-testid="contact-form">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <motion.div variants={fadeUp}>
                     <label className="block text-xs font-bold uppercase tracking-wider text-[#003087] mb-2">
                       {t("contact.form.firstName")} *

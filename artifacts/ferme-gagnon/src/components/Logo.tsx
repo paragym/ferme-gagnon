@@ -1,4 +1,4 @@
-export function Logo({ size = 120 }: { size?: number }) {
+export function Logo({ size = 120, className }: { size?: number; className?: string }) {
   return (
     <img
       src={`${import.meta.env.BASE_URL}logo.png`}
@@ -8,6 +8,7 @@ export function Logo({ size = 120 }: { size?: number }) {
       style={{ width: size, height: size, display: "block" }}
       loading="eager"
       decoding="async"
+      className={className}
     />
   );
 }
