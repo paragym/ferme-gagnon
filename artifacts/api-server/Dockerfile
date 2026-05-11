@@ -5,6 +5,8 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 
 WORKDIR /app
 
+ENV npm_config_user_agent="pnpm/9.0.0 npm/? node/22.22.2"
+
 # Copy workspace manifests and lockfile first for better layer caching
 COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
 
