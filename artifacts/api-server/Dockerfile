@@ -14,6 +14,7 @@ COPY lib/db/package.json ./lib/db/
 COPY artifacts/api-server/package.json ./artifacts/api-server/
 
 # Install all dependencies (including workspace packages)
+ENV npm_config_user_agent="pnpm/9.0.0 npm/? node/22.22.2"
 RUN pnpm install --frozen-lockfile
 
 # Copy the full source for every package the api-server depends on
